@@ -3,8 +3,10 @@
   "version": "0.2.1",
   "description": "echomd conversion tool for browsers and console",
   "main": "index.js",
+  "module": "index.mjs",
   "browser": "min.js",
   "dependencies": {
+    "codedent": "^0.1.2",
     "echomd": "^0.2.3"
   },
   "devDependencies": {
@@ -32,6 +34,13 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/WebReflection/consolemd/issues"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json"
   },
   "homepage": "https://github.com/WebReflection/consolemd#readme"
 }

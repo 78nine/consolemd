@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConsoleMD</title>
+  <script type="importmap">{"imports":{"codedent":"https://esm.run/codedent"}}</script>
+  <script type="module">
+    import * as console from './index.mjs';
+
+    console.log('what a *bold* solution!');
+
+    console.log(`
+      # Bringing MD Like Syntax To Console
+
+      It should be something as **easy**
+      and as _natural_ as writing text.
+
+      > Kepp It Simple
+
+      Is the idea
+
+        * behind
+        * all this
+
+      ~striking~ UX for \`shell\` users too.
+      - - -
+      #green(Enjoy)
+    `);
+  </script>
+</head>
+</html>
